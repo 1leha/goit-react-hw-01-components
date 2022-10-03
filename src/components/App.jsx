@@ -1,5 +1,5 @@
 import user from '../user.json';
-import UserProfile from './UserProfile/UserProfile';
+import UserProfile from './1-SocialProfile/UserProfile/UserProfile';
 
 export const App = () => {
   return (
