@@ -1,36 +1,97 @@
 .profile {
-  padding-top: 50px;
-
   text-align: center;
 
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(217, 231, 236);
-  border-radius: 15px;
+  border-radius: 10px;
 
-  box-shadow: 2px 2px 15px rgb(233, 243, 247);
+  box-shadow: 2px 2px 15px #d2dbe7;
 
-  /* background-color: aqua; */
+  overflow: hidden;
 }
 
 .description {
+  padding: 45px;
+  width: 375px;
+  box-sizing: border-box;
 }
 
 .avatar {
+  display: inline-block;
+  width: 150px;
+
+  margin-bottom: 35px;
 }
 
 .name {
+  margin: 0 0 16px 0;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #122236;
 }
 
 .tag {
+  margin: 0 0 14px 0;
+
+  font-size: 20px;
+
+  color: #8594a2;
 }
 
 .location {
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  color: #8594a2;
 }
 
 .stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  /* padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px; */
+  margin: 0;
+
+  font-size: 16px;
+  list-style: none;
+
+  background-color: #f3f6f9;
 }
+
+.stats > li {
+  flex: 1 1 33.3333%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 10px; */
+  padding-top: 25px;
+  padding-bottom: 30px;
+
+  position: relative;
+}
+
+.stats > li:not(:last-child) {
+  border-right: 1px solid #e5eaf1;
+  /* background-color: #e5eaf1; */
+}
+
 .label {
+  font-size: 18px;
+
+  margin-bottom: 12px;
+
+  color: #768696;
   text-transform: capitalize;
 }
 .quantity {
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #1f3349;
 }
