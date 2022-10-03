@@ -8,4 +8,29 @@
   border-radius: 15px;
 
   box-shadow: 2px 2px 15px rgb(233, 243, 247);
+
+  /* background-color: aqua; */
+}
+
+.description {
+}
+
+.avatar {
+}
+
+.name {
+}
+
+.tag {
+}
+
+.location {
+}
+
+.stats {
+}
+.label {
+  text-transform: capitalize;
+}
+.quantity {
 }
