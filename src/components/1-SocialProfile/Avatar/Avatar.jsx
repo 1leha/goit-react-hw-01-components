@@ -5,7 +5,7 @@ export default function Avatar({ avatar, username }) {
   return <img src={avatar} alt={username} className={css.avatar} />;
 }
 
-Avatar.protoType = {
+Avatar.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
 };

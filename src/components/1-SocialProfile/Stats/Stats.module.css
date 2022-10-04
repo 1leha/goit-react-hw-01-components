@@ -2,10 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding: 0;
-  /* padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px; */
+
   margin: 0;
 
   font-size: 16px;
@@ -31,7 +28,6 @@
 
 .stats > li:not(:last-child) {
   border-right: 1px solid #e5eaf1;
-  /* background-color: #e5eaf1; */
 }
 
 .label {

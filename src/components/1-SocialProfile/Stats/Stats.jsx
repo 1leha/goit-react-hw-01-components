@@ -22,9 +22,7 @@ export default function Stat({ followers, views, likes }) {
 }
 
 Stat.propTypes = {
-  stats: PropTypes.exact({
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
-  }),
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 };

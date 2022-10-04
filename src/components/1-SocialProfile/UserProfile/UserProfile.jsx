@@ -23,3 +23,6 @@ export default function UserProfile({
     </div>
   );
 }
+UserProfile.propTypes = {
+  stats: PropTypes.shape(),
+};

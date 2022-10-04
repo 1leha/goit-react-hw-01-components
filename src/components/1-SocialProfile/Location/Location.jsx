@@ -6,6 +6,6 @@ export default function Location({ location }) {
   return <p className={css.location}>{location}</p>;
 }
 
-Location.protoType = {
+Location.propTypes = {
   location: PropTypes.string.isRequired,
 };

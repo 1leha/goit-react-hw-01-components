@@ -6,6 +6,6 @@ export default function Tag({ tag }) {
   return <p className={css.tag}>{tag}</p>;
 }
 
-Tag.protoType = {
+Tag.propTypes = {
   tag: PropTypes.string.isRequired,
 };
