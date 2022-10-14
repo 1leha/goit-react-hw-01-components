@@ -3,16 +3,13 @@
 
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-
-  box-shadow: 2px 2px 15px #d2dbe7;
-
+  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
 .description {
   padding: 45px;
   width: 375px;
-  box-sizing: border-box;
 }
 
 .avatar {
@@ -48,11 +45,8 @@
 .stats {
   display: flex;
   justify-content: space-around;
+
   padding: 0;
-  /* padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px; */
   margin: 0;
 
   font-size: 16px;
@@ -63,13 +57,11 @@
 
 .stats > li {
   flex: 1 1 33.3333%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  /* padding: 10px; */
   padding-top: 25px;
   padding-bottom: 30px;
 
@@ -78,7 +70,6 @@
 
 .stats > li:not(:last-child) {
   border-right: 1px solid #e5eaf1;
-  /* background-color: #e5eaf1; */
 }
 
 .label {
@@ -89,9 +80,10 @@
   color: #768696;
   text-transform: capitalize;
 }
+
 .quantity {
   font-size: 18px;
   font-weight: 700;
 
-  color: #1f3349;
+  color: #263f5a;
 }

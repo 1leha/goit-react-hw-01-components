@@ -1,4 +1,12 @@
+:root {
+  --shadow: 2px 2px 15px rgb(177, 180, 218);
+}
+
 @import-normalize; /* bring in normalize.css styles */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
