@@ -16,7 +16,7 @@ export default function Statistics({ title, stats }) {
             className={css.item}
             style={{
               backgroundColor: getRandomHexColor(),
-              flexBasis: getItemWidth(statLength),
+              width: getItemWidth(statLength),
             }}
           >
             <span className={css.label}>{label}</span>
