@@ -4,6 +4,6 @@ export const TableBodyCell = styled.td`
   padding: 5px;
 
   &:not(:last-child) {
-    border-right: 1px solid var(--tableBodySeparator);
+    border-right: ${p => p.theme.borders.normal} ${p => p.theme.colors.tableBodySeparator};
   }
 `;

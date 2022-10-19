@@ -1,5 +1,16 @@
 import PropTypes from 'prop-types';
-import css from './UserProfile.module.css';
+import {
+  Profile,
+  Description,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  Stats,
+  StatsElement,
+  Label,
+  Quantity,
+} from './UserProfile.styled';
 
 export default function UserProfile({
   username,
@@ -8,55 +19,30 @@ export default function UserProfile({
   avatar,
   stats: { followers, views, likes },
 }) {
-  // return (
-  //   <div className={css.profile}>
-  //     <div className={css.description}>
-  //       <img src={avatar} alt={username} className={css.avatar} />
-  //       <p className={css.name}>{username}</p>
-  //       <p className={css.tag}>{tag}</p>
-  //       <p className={css.location}>{location}</p>
-  //     </div>
-
-  //     <ul className={css.stats}>
-  //       <li>
-  //         <span className={css.label}>Followers</span>
-  //         <span className={css.quantity}>{followers}</span>
-  //       </li>
-  //       <li>
-  //         <span className={css.label}>Views</span>
-  //         <span className={css.quantity}>{views}</span>
-  //       </li>
-  //       <li>
-  //         <span className={css.label}>Likes</span>
-  //         <span className={css.quantity}>{likes}</span>
-  //       </li>
-  //     </ul>
-  //   </div>
-  // );
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={avatar} alt={username} className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>{tag}</p>
-        <p className={css.location}>{location}</p>
-      </div>
+    <Profile>
+      <Description>
+        <Avatar src={avatar} alt={username} />
+        <Name>{username}</Name>
+        <Tag>{tag}</Tag>
+        <Location>{location}</Location>
+      </Description>
 
-      <ul className={css.stats}>
-        <li>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats>
+        <StatsElement>
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
+        </StatsElement>
+        <StatsElement>
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
+        </StatsElement>
+        <StatsElement>
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
+        </StatsElement>
+      </Stats>
+    </Profile>
   );
 }
 
