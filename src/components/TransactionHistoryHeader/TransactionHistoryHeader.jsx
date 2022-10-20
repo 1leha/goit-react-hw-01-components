@@ -1,13 +1,13 @@
-import { TableHead, TableHeadCell } from './TransactionHistoryHeader.styled';
+import { TableHeadStyled, TableHeadCellStyled } from './TransactionHistoryHeader.styled';
 
 export default function TransactionHistoryHeader() {
   return (
-    <TableHead>
+    <TableHeadStyled>
       <tr>
-        <TableHeadCell>Type</TableHeadCell>
-        <TableHeadCell>Amount</TableHeadCell>
-        <TableHeadCell>Currency</TableHeadCell>
+        <TableHeadCellStyled>Type</TableHeadCellStyled>
+        <TableHeadCellStyled>Amount</TableHeadCellStyled>
+        <TableHeadCellStyled>Currency</TableHeadCellStyled>
       </tr>
-    </TableHead>
+    </TableHeadStyled>
   );
 }

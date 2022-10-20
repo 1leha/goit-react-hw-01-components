@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Table = styled.table`
+export const TableStyled = styled.table`
   padding: 0;
   margin: 0;
   width: 25%;

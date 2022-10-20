@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const TableBody = styled.tbody`
+export const TableBodyStyled = styled.tbody`
   padding: 5px;
 
   text-align: center;
@@ -13,13 +13,5 @@ export const TableBody = styled.tbody`
     &:nth-of-type(odd) {
       background-color: ${p => p.theme.colors.tableOddRowBG};
     }
-  }
-`;
-
-export const TableBodyCell = styled.td`
-  padding: 5px;
-
-  &:not(:last-child) {
-    border-right: ${p => p.theme.borders.normal} ${p => p.theme.colors.tableBodySeparator};
   }
 `;

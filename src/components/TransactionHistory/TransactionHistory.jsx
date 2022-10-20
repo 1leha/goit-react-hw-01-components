@@ -1,13 +1,13 @@
 import TransactionHistoryHeader from '../TransactionHistoryHeader/TransactionHistoryHeader';
 import TransactionHistoryBody from '../TransactionHistoryBody/TransactionHistoryBody';
 
-import { Table } from './TransactionHistory.styled';
+import { TableStyled } from './TransactionHistory.styled';
 
 export default function TransactionHistory({ items }) {
   return (
-    <Table>
+    <TableStyled>
       <TransactionHistoryHeader />
       <TransactionHistoryBody items={items} />
-    </Table>
+    </TableStyled>
   );
 }

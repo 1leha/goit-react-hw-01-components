@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const TableBodyCell = styled.td`
+export const TableBodyCellStyled = styled.td`
   padding: 5px;
 
   &:not(:last-child) {

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const TableHead = styled.thead`
+export const TableHeadStyled = styled.thead`
   text-transform: uppercase;
   letter-spacing: ${p => p.theme.letterSpacings.tableHeader};
 
@@ -8,7 +8,7 @@ export const TableHead = styled.thead`
   color: ${p => p.theme.colors.tableHeadText};
 `;
 
-export const TableHeadCell = styled.th`
+export const TableHeadCellStyled = styled.th`
   padding: 5px;
   width: 33.333%;
 

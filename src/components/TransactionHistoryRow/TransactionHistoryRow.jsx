@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { TableBodyCell } from './TransactionHistoryRow.styled';
+import { TableBodyCellStyled } from './TransactionHistoryRow.styled';
 
 export default function TransactionHistoryRow({ type, amount, currency }) {
   return (
     <tr>
-      <TableBodyCell>{type}</TableBodyCell>
-      <TableBodyCell>{amount}</TableBodyCell>
-      <TableBodyCell>{currency}</TableBodyCell>
+      <TableBodyCellStyled>{type}</TableBodyCellStyled>
+      <TableBodyCellStyled>{amount}</TableBodyCellStyled>
+      <TableBodyCellStyled>{currency}</TableBodyCellStyled>
     </tr>
   );
 }

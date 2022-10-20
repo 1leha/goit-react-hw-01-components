@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Profile = styled.div`
+export const ProfileStyled = styled.div`
   text-align: center;
 
   background-color: ${p => p.theme.colors.secondary};
@@ -9,19 +9,19 @@ export const Profile = styled.div`
   overflow: hidden;
 `;
 
-export const Description = styled.div`
+export const DescriptionStyled = styled.div`
   padding: 45px;
   width: 375px;
 `;
 
-export const Avatar = styled.img`
+export const AvatarStyled = styled.img`
   display: inline-block;
   width: 150px;
 
   margin-bottom: 35px;
 `;
 
-export const Name = styled.p`
+export const NameStyled = styled.p`
   margin: 0 0 16px 0;
 
   font-size: ${p => p.theme.fontSizes.xl};
@@ -30,7 +30,7 @@ export const Name = styled.p`
   color: ${p => p.theme.colors.primary};
 `;
 
-export const Tag = styled.p`
+export const TagStyled = styled.p`
   margin: 0 0 14px 0;
 
   font-size: ${p => p.theme.fontSizes.l};
@@ -38,7 +38,7 @@ export const Tag = styled.p`
   color: ${p => p.theme.colors.third};
 `;
 
-export const Location = styled.p`
+export const LocationStyled = styled.p`
   font-size: ${p => p.theme.fontSizes.l};
 
   margin: 0px;
@@ -46,7 +46,7 @@ export const Location = styled.p`
   color: ${p => p.theme.colors.third};
 `;
 
-export const Stats = styled.ul`
+export const StatsStyled = styled.ul`
   display: flex;
   justify-content: space-around;
 
@@ -58,7 +58,7 @@ export const Stats = styled.ul`
   background-color: ${p => p.theme.colors.userStatsBG};
 `;
 
-export const StatsElement = styled.li`
+export const StatsElementStyled = styled.li`
   flex: 1 1 33.3333%;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@ export const StatsElement = styled.li`
   }
 `;
 
-export const Label = styled.span`
+export const LabelStyled = styled.span`
   font-size: ${p => p.theme.fontSizes.m};
 
   margin-bottom: 12px;
@@ -84,7 +84,7 @@ export const Label = styled.span`
   text-transform: capitalize;
 `;
 
-export const Quantity = styled.span`
+export const QuantityStyled = styled.span`
   font-size: ${p => p.theme.fontSizes.m};
   font-weight: ${p => p.theme.fontWeights.bold};
   color: ${p => p.theme.colors.primary};
