@@ -8,11 +8,20 @@ import Statistics from '../Statistics/Statistics';
 import FriendList from '../FriendList/FriendList';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
 
-import { AppStyled } from './App.styled';
+import { Box } from '../Box';
 
 export const App = () => {
   return (
-    <AppStyled>
+    <Box
+      height="100vh"
+      display="flex"
+      flexWrap="wrap"
+      gridGap="50px"
+      justifyContent="center"
+      alignItems="center"
+      fontSizes="xxl"
+      backgroundColor="appBGColor"
+    >
       <UserProfile
         username={user.username}
         tag={user.tag}
@@ -23,6 +32,6 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </AppStyled>
+    </Box>
   );
 };

@@ -1,8 +1,10 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const FriendListItemStyled = styled.li`
-  list-style: none;
-  padding: 10px 20px;
+  padding-top: ${p => p.theme.space[4]}px;
+  padding-bottom: ${p => p.theme.space[4]}px;
+  padding-left: ${p => p.theme.space[5]}px;
+  padding-right: ${p => p.theme.space[5]}px;
 
   display: flex;
   justify-content: left;
@@ -19,7 +21,7 @@ export const FriendListItemStyled = styled.li`
   box-shadow: ${p => p.theme.shadows.standart}${p => p.theme.colors.shadow};
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: ${p => p.theme.space[4]}px;
   }
 `;
 
@@ -28,7 +30,7 @@ export const StatusStyled = styled.span`
   width: 15px;
   height: 15px;
 
-  margin-right: 15px;
+  margin-right: ${p => p.theme.space[4]}px;
 
   border-radius: ${p => p.theme.radii.rounded};
 
@@ -39,9 +41,9 @@ export const StatusStyled = styled.span`
 `;
 
 export const AvatarStyled = styled.img`
-  margin-right: 20px;
+  margin-right: ${p => p.theme.space[4]}px;
 `;
 
 export const NameStyled = styled.span`
-  margin: 0;
+  margin: ${p => p.theme.space[0]}px;
 `;

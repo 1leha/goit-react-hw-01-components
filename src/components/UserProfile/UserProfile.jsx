@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import {
-  ProfileStyled,
-  DescriptionStyled,
+  // ProfileStyled,
+  // DescriptionStyled,
   AvatarStyled,
   NameStyled,
   TagStyled,
@@ -12,6 +12,8 @@ import {
   QuantityStyled,
 } from './UserProfile.styled';
 
+import { Box } from '../Box';
+
 export default function UserProfile({
   username,
   tag,
@@ -20,29 +22,64 @@ export default function UserProfile({
   stats: { followers, views, likes },
 }) {
   return (
-    <ProfileStyled>
-      <DescriptionStyled>
+    <Box
+      boxShadow="standart"
+      textAlign="center"
+      backgroundColor="secondary"
+      borderRadius="standart"
+      overflow="hidden"
+    >
+      <Box p={5} width="375px">
         <AvatarStyled src={avatar} alt={username} />
         <NameStyled>{username}</NameStyled>
         <TagStyled>{tag}</TagStyled>
         <LocationStyled>{location}</LocationStyled>
-      </DescriptionStyled>
+      </Box>
 
-      <StatsStyled>
+      <Box
+        as="ul"
+        display="flex"
+        justifyContent="space-around"
+        p={0}
+        m={0}
+        listStyle="none"
+        backgroundColor="userStatsBG"
+      >
         <StatsElementStyled>
-          <LabelStyled>Followers</LabelStyled>
-          <QuantityStyled>{followers}</QuantityStyled>
+          <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            textAlign="center"
+          >
+            <LabelStyled>Followers</LabelStyled>
+            <QuantityStyled>{followers}</QuantityStyled>
+          </Box>
         </StatsElementStyled>
         <StatsElementStyled>
-          <LabelStyled>Views</LabelStyled>
-          <QuantityStyled>{views}</QuantityStyled>
+          <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            textAlign="center"
+          >
+            <LabelStyled>Views</LabelStyled>
+            <QuantityStyled>{views}</QuantityStyled>
+          </Box>
         </StatsElementStyled>
         <StatsElementStyled>
-          <LabelStyled>Likes</LabelStyled>
-          <QuantityStyled>{likes}</QuantityStyled>
+          <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            textAlign="center"
+          >
+            <LabelStyled>Likes</LabelStyled>
+            <QuantityStyled>{likes}</QuantityStyled>
+          </Box>
         </StatsElementStyled>
-      </StatsStyled>
-    </ProfileStyled>
+      </Box>
+    </Box>
   );
 }
 

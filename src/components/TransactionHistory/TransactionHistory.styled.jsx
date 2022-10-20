@@ -1,8 +1,6 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const TableStyled = styled.table`
-  padding: 0;
-  margin: 0;
   width: 25%;
 
   font-size: ${p => p.theme.fontSizes.m};
@@ -10,6 +8,7 @@ export const TableStyled = styled.table`
   border-collapse: collapse;
 
   background-color: ${p => p.theme.colors.secondary};
-  border: ${p => p.theme.borders.normal} ${p => p.theme.colors.tableBodySeparator};
-  box-shadow: ${p => p.theme.shadows.standart} ${p => p.theme.colors.shadow};
+  border: ${p => p.theme.borders.normal};
+  border-color: ${p => p.theme.colors.tableBodySeparator};
+  box-shadow: ${p => p.theme.shadows.standart};
 `;

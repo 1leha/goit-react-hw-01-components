@@ -1,8 +1,6 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const TableBodyStyled = styled.tbody`
-  padding: 5px;
-
   text-align: center;
 
   & tr {

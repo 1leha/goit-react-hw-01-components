@@ -13,6 +13,7 @@ export const theme = {
 
     userStatsBG: '#f3f6f9',
     userStatsBorder: '#e5eaf1',
+    userStatsSocialTag: '#768696',
 
     tableHead: '#6d94ff',
     tableHeadText: 'white',
@@ -26,8 +27,6 @@ export const theme = {
     friendListOfflineStatus: 'red',
 
     statisticsTextColor: 'white',
-
-    shadow: '#00000022',
   },
 
   fonts: {
@@ -54,7 +53,9 @@ export const theme = {
   },
 
   //   lineHeights,
+
   //   opacities,
+
   radii: {
     none: 'none',
     standart: '10px',
@@ -62,12 +63,15 @@ export const theme = {
   },
 
   shadows: {
-    standart: `2px 2px 10px`,
+    standart: `2px 2px 10px #00000022`,
   },
 
   //   sizes,
-  //   space,
+
+  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
+
   //   transitions,
+
   //   zIndices,
 };
 

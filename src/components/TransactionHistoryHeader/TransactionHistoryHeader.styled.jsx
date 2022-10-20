@@ -1,18 +1,11 @@
-import styled from '@emotion/styled';
-
-export const TableHeadStyled = styled.thead`
-  text-transform: uppercase;
-  letter-spacing: ${p => p.theme.letterSpacings.tableHeader};
-
-  background-color: ${p => p.theme.colors.tableHead};
-  color: ${p => p.theme.colors.tableHeadText};
-`;
+import styled from 'styled-components';
 
 export const TableHeadCellStyled = styled.th`
-  padding: 5px;
+  padding: ${p => p.theme.space[3]}px;
   width: 33.333%;
 
   &:not(:last-child) {
-    border-right: ${p => p.theme.borders.normal} ${p => p.theme.colors.secondary};
+    border-right: ${p => p.theme.borders.normal};
+    border-color: ${p => p.theme.colors.secondary};
   }
 `;

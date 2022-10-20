@@ -1,9 +1,10 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const TableBodyCellStyled = styled.td`
-  padding: 5px;
+  padding: ${p => p.theme.space[3]}px;
 
   &:not(:last-child) {
-    border-right: ${p => p.theme.borders.normal} ${p => p.theme.colors.tableBodySeparator};
+    border-right: ${p => p.theme.borders.normal};
+    border-color: ${p => p.theme.colors.tableBodySeparator};
   }
 `;

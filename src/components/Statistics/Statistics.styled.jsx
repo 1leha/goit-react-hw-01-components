@@ -1,16 +1,9 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { getRandomHexColor, getItemWidth } from '../../utils';
 
-export const SectionStyled = styled.section`
-  box-shadow: ${p => p.theme.shadows.standart}${p => p.theme.colors.shadow};
-  border-radius: ${p => p.theme.radii.standart};
-
-  overflow: hidden;
-`;
-
 export const TitleStyled = styled.h2`
-  margin: 0;
-  padding: 30px;
+  margin: ${p => p.theme.space[0]};
+  padding: ${p => p.theme.space[5]}px;
 
   font-size: ${p => p.theme.fontSizes.xl};
   letter-spacing: ${p => p.theme.letterSpacings.stats};
@@ -22,24 +15,9 @@ export const TitleStyled = styled.h2`
   background-color: ${p => p.theme.colors.secondary};
 `;
 
-export const StatListStyled = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0px;
-
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-
-  font-weight: ${p => p.theme.fontWeights.bold};
-  text-transform: uppercase;
-  text-align: center;
-`;
-
 export const StatItemStyled = styled.li`
   width: ${p => getItemWidth(p.statLength)};
-  padding: 20px;
+  padding: ${p => p.theme.space[4]}px;
 
   display: flex;
   flex-direction: column;
@@ -47,18 +25,18 @@ export const StatItemStyled = styled.li`
   justify-content: center;
 
   color: ${p => p.theme.colors.statisticsTextColor};
-
   background-color: ${getRandomHexColor};
 `;
 
 export const LabelStyled = styled.span`
   width: 100%;
 
-  margin-bottom: 10px;
+  margin-bottom: ${p => p.theme.space[3]}px;
 
   font-size: ${p => p.theme.fontSizes.s};
   text-align: center;
 `;
+
 export const PercentageStyled = styled.span`
   width: 100%;
 

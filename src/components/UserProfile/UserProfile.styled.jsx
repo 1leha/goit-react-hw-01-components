@@ -1,18 +1,4 @@
-import styled from '@emotion/styled';
-
-export const ProfileStyled = styled.div`
-  text-align: center;
-
-  background-color: ${p => p.theme.colors.secondary};
-  border-radius: ${p => p.theme.radii.standart};
-  box-shadow: ${p => p.theme.shadows.standart} ${p => p.theme.colors.shadow};
-  overflow: hidden;
-`;
-
-export const DescriptionStyled = styled.div`
-  padding: 45px;
-  width: 375px;
-`;
+import styled from 'styled-components';
 
 export const AvatarStyled = styled.img`
   display: inline-block;
@@ -46,41 +32,24 @@ export const LocationStyled = styled.p`
   color: ${p => p.theme.colors.third};
 `;
 
-export const StatsStyled = styled.ul`
-  display: flex;
-  justify-content: space-around;
-
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-
-  background-color: ${p => p.theme.colors.userStatsBG};
-`;
-
 export const StatsElementStyled = styled.li`
   flex: 1 1 33.3333%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  padding-top: 25px;
-  padding-bottom: 30px;
-
-  position: relative;
+  padding-top: ${p => p.theme.space[4]}px;
+  padding-bottom: ${p => p.theme.space[4]}px;
 
   &:not(:last-child) {
-    border-right: ${p => p.theme.borders.normal} ${p => p.theme.colors.userStatsBorder};
+    border-right: ${p => p.theme.borders.normal};
+    border-right-color: ${p => p.theme.colors.userStatsBorder};
   }
 `;
 
 export const LabelStyled = styled.span`
   font-size: ${p => p.theme.fontSizes.m};
 
-  margin-bottom: 12px;
+  margin-bottom: ${p => p.theme.space[4]}px;
 
-  color: #768696;
+  color: ${p => p.theme.colors.userStatsSocialTag};
   text-transform: capitalize;
 `;
 
