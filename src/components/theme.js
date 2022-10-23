@@ -52,10 +52,6 @@ export const theme = {
     stats: '1px',
   },
 
-  //   lineHeights,
-
-  //   opacities,
-
   radii: {
     none: 'none',
     standart: '10px',
@@ -66,15 +62,10 @@ export const theme = {
     standart: `2px 2px 10px #00000022`,
   },
 
-  //   sizes,
-
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
-
-  //   transitions,
-
-  //   zIndices,
 };
 
+// Моя шпаргалка
 // borders:	border, border-top, border-right, border-bottom, border-left, border-block, border-block-end, border-block-start, border-inline, border-inline-end, border-inline-start
 // borderStyles:	border-style, border-top-style, border-bottom-style, border-left-style, border-right-style, border-block-end-style, border-block-start-style, border-block-style, border-inline-end-style, border-inline-start-style, border-inline-style
 // borderWidths:	border-width, border-top-width, border-bottom-width, border-left-width, border-right-width, border-block-end-width, border-block-start-width, border-block-width, border-inline-end-width, border-inline-start-width, border-inline-width, column-rule-width
